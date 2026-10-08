@@ -1,0 +1,44 @@
+:root {
+  --cardholder: red;
+  --cardnum: blue;
+  --expiry-date: green;
+  --pay-button: brown;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+#cardholder {
+  border: 2px solid var(--cardholder);
+}
+
+#cardnum {
+  border: 2px solid var(--cardnum);
+}
+
+#expiry-date {
+  border: 2px solid var(--expiry-date);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--pay-button);
+  color: white;
+}

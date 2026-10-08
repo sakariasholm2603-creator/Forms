@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>forms exercise</title>
+  </head>
+
+  <body>
+    <nav>
+      <p><a href="index.html"> index </a></p>
+    </nav>
+
+    <h2>Excersize 3 / A Callback Form</h2>
+
+    <form>
+      <div>
+        <label for="fullname">Fullname:</label>
+        <input id="fullname" type="text" name="fullname" />
+      </div>
+
+      <div>
+        <label for="phonenumber">Phone number:</label>
+        <input placeholder="+45" size="2" disabled />
+        <input
+          id="phone-number"
+          type="tel"
+          pattern="\d{8}|\d{2} \d{2} \d{2} \d{2}"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="timeWindow">Preferred time window</label>
+        <select id="timeWindow" name="timeWindow">
+          <option value="">No preference</option>
+          <option value="morning">Morning (08:00-12:00)</option>
+          <option value="midday">Midday (12:00-16:00)</option>
+          <option value="afternoon">Afternoon (16:00-20:00)</option>
+          <option value="evening">Evening (20:00-22:00)</option>
+        </select>
+        <div>
+          <button>Request time</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
